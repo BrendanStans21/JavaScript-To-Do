@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <title>To Do</title>
     <link href="css/main.css" rel="stylesheet">
+    <script defer src="scripts/utils.js"></script>
 </head>
 <body>
     <h1>To-Do</h1>
-
-    <script src="scripts/utils.js"></script>
+    <form>
+        <p>Enter Task: <input type="text" name="task"/>
+        <input type="button" name="save" value="Save"/>
+        <input type="button" name="clear" value="Clear"/></p>
+    </form>
+    <div id="unfinishedTasks">
+        <!-- Use JS to add the ul element of all the added tasks -->
+    </div>
 </body>
 </html>
