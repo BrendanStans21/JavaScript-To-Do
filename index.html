@@ -8,13 +8,16 @@
 </head>
 <body>
     <h1>To-Do</h1>
-    <form>
-        <p>Enter Task: <input type="text" name="task"/>
-        <input type="button" name="save" value="Save"/>
-        <input type="button" name="clear" value="Clear"/></p>
+    <form id="task-entry-form">
+        <p>Enter Task: <input id="new-task" type="text" name="task"/>
+        <input id="save-btn" type="button" name="save" value="Save Task"/>
+        <input id="clear-btn" type="button" name="clear" value="Clear Task"/></p>
     </form>
-    <div id="unfinishedTasks">
-        <!-- Use JS to add the ul element of all the added tasks -->
+    <div id="list-container">
+        <ul id="tasks">
+            <!-- Use JS to add the ul element of all the added tasks -->
+        </ul>
+        <input id="delete-tasks-btn" type="button" name="delete-all" value="Delete All Tasks"/>
     </div>
 </body>
 </html>

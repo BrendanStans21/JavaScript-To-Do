@@ -1,0 +1,27 @@
+html {
+    background-color: rgb(100, 205, 212);
+}
+
+h1 {
+    text-align: center;
+}
+
+form#task-entry-form {
+    text-align: center;
+}
+
+div#list-container {
+    text-align: center;
+    visibility: hidden;
+}
+
+ul#tasks {
+    list-style: none;
+}
+
+input.done-btn {
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
