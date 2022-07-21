@@ -6,10 +6,14 @@ saveButton.addEventListener('click', function() {
     let newTask = document.getElementById("new-task").value;
     let taskList = document.getElementById("tasks");
 
-    document.getElementById("list-container").style.visibility = "visible";
+    if(newTask != "") {
+        document.getElementById("list-container").style.visibility = "visible";
 
-    taskList.innerHTML += "<li>" + newTask + "<input class='done-btn' type='button' value='Done'/></li>";
-    document.getElementById("new-task").value = "";
+        taskList.innerHTML += "<li>" + newTask + "<input class='done-btn'   type='button' value='Done'/></li>";
+        document.getElementById("new-task").value = "";
+    } else {
+        alert("Task must be entered before saving");
+    }
 });
 
 clearButton.addEventListener('click', function() {
